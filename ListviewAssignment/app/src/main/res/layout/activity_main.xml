@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"  >
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TableRow>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/Heading"
+            android:textSize="30dp"/>
+    </TableRow>
+
+
+    <TableRow>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TextName"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:id="@+id/EmpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+    </TableRow>
+    <TableRow>
+            <TextView
+                android:id="@+id/coursename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coursename"
+                />
+            <Spinner
+                android:id="@+id/course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/courseselct"
+                android:entries="@array/courselist">
+
+            </Spinner>
+
+    </TableRow>
+    <TableRow>
+            <TextView
+                android:id="@+id/coursetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/courseduration"
+                />
+            <RadioGroup
+                android:id="@+id/RadioGp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+                <RadioButton
+                    android:id="@+id/Rbutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendays"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/Rbutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twentydays"
+                    />
+            </RadioGroup>
+
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit"/>
+        </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple ListView"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListView with Custom Adaptor"/>
+    </TableRow>
+</TableLayout>
+</LinearLayout>

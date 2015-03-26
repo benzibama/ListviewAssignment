@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ListviewAssignment</string>
+
+    <string name="Heading">Course Details</string>
+    <string name="TextName">Enter your Name</string>
+    <string name="TextValue">Name</string>
+    <string name="coursename">Select the Course</string>
+    <string name="courseselct">Select the Course</string>
+    <string name="courseduration">Course Duration</string>
+    <string name="tendays">10 Days</string>
+    <string name="twentydays">20 Days</string>
+    <string name="Submit">Submit value</string>
+    <string name="simplelist">Simple ListView</string>
+    <string name="statelist">Select the State</string>
+    <string name="Customlist">Custom ListView</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="courselist">
+        <item>Java</item>
+        <item>Android</item>
+        <item>C/C++</item>
+        <item>QA</item>
+    </string-array>
+</resources>
